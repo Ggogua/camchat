@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/chat.css" />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/webcam-easy@1.1.1/dist/webcam-easy.min.js"
+    ></script>
+    <title>Video Chat</title>
+  </head>
+  <body>
+    <div class="video-container">
+      <div class="both-cameras">
+        <div class="local-video-section">
+          <div class="video-nest">
+            <video id="localVideo" autoplay muted></video>
+          </div>
+          <canvas id="canvas"></canvas>
+          <div class="settings">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <div class="profilePic">
+            <img
+              src="/"
+              alt="Profile Photo"
+              class="prof-pic"
+              id="profile-photo-chat-local"
+            />
+          </div>
+        </div>
+        <div class="stranger-video-section">
+          <div class="profilePicSt">
+            <img
+              src=""
+              alt="Profile Photo"
+              class="prof-pic"
+              id="profile-photo-chat"
+            />
+          </div>
+          <video id="strangerVideo" autoplay></video>
+        </div>
+      </div>
+
+      <div class="chat-section">
+        <div class="messages" id="messages"></div>
+        <div class="both-areas">
+          <textarea
+            id="chatInput"
+            placeholder="Type your message..."
+          ></textarea>
+          <button id="sendButton" class="send-button">Send</button>
+          <button id="startWebcamButton" class="next-button">
+            Start Webcam
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/chat.js"></script>
+    <script
+      src="https://kit.fontawesome.com/593629f941.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

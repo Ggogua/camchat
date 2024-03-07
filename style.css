@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: url("./assets/background.png") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.landing-page {
+  background: none;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  animation: slideInUp 1s ease-in-out;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #373737f0;
+  padding: 2em;
+  border-radius: 2em;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  transition: all 0.15s ease;
+}
+
+.buttons button:hover {
+  background-color: #2980b9;
+}
+
+.buttons button:active {
+  transform: translateY(1px);
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    max-width: 100%;
+    padding: 1em;
+  }
+}
+
+.signup-page {
+  background: none;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  animation: slideInUp 1s ease-in-out;
+}
+
+.signup-content {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #373737f0;
+  padding: 1em;
+  border-radius: 2em;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #21618c;
+  text-decoration: underline;
+}
+
+.password-input {
+  position: relative;
+  width: 350px;
+}
+
+.fa-eye-slash {
+  position: absolute;
+  color: black;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.fa-eye {
+  position: absolute;
+  color: black;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.password-field {
+  width: 100%;
+}
+
+.form label {
+  color: #3498db;
+}
+
+.fa-eye-slash:hover {
+  color: #777;
+}
+
+.fa-eye:hover {
+  color: #777;
+}
+
+.login-page {
+  background: none;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  animation: slideInUp 1s ease-in-out;
+}
+
+.login-content {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #373737f0;
+  padding: 1em;
+  border-radius: 2em;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.login-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.login-password-field {
+  width: 100%;
+}
+
+.login-password-input {
+  position: relative;
+  width: 350px;
+}
+
+.login-form label {
+  color: #3498db;
+}
+
+.error-message {
+  padding: 0;
+  margin: 0;
+  color: rgb(208, 6, 6);
+}
+
+.question-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #373737f0;
+  padding: 2em;
+  border-radius: 1.5em;
+}
+
+.question-section-2,
+.question-section-3,
+.question-section-4,
+.question-section-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #373737f0;
+  padding: 2em;
+  border-radius: 1.5em;
+}
+
+.question-div[type="username"],
+.question-div[type="age"],
+.question-div[type="interest"] {
+  display: flex;
+  flex-direction: column;
+}
+
+.question-div button {
+  margin-top: 1em;
+}
+
+.question-div[type="username"] input {
+  padding: 1em;
+  border: none;
+  outline: none;
+  font-size: 1em;
+}
+
+.question-div[type="age"] input,
+.question-div[type="interest"] input,
+.question-div[type="username"] input {
+  padding: 0.8em;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.user-photo {
+  height: 4em;
+  border-radius: 0.2em;
+  width: 4em;
+}
+
+.profile-photo-upload label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.profile-photo-upload button {
+  width: 100%;
+}

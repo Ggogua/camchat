@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.video-container {
+  display: flex;
+  flex: 1;
+}
+
+.both-cameras {
+  display: flex;
+  flex: 2;
+}
+
+.local-video-section,
+.stranger-video-section {
+  flex: 1;
+  position: relative;
+}
+
+#localVideo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+}
+
+#strangerVideo {
+  width: 100%;
+  height: 100%;
+}
+
+.local-video-section {
+  background-color: #ccc;
+}
+
+.stranger-video-section {
+  background-color: #ddd;
+}
+
+#chatInput {
+  resize: none;
+  width: 15em;
+  outline: none;
+  border: 1px solid #00000037;
+  font-size: 14px;
+  height: 4em;
+  border-radius: 0.5px;
+}
+
+.messages {
+  height: 380px;
+}
+
+.both-areas {
+  display: flex;
+  padding: 1em;
+  bottom: 0;
+  gap: 1em;
+  flex-direction: column;
+  position: relative;
+}
+
+.send-button {
+  border: none;
+  color: #fff;
+  background-color: #3498db;
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 3px;
+  transition: all 0.15s;
+}
+
+.send-button:hover {
+  background-color: #3485db;
+}
+
+.next-button {
+  border: none;
+  color: #fff;
+  background: #3d3d3d;
+  padding: 1em;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.next-button:hover {
+  background-color: #302f2f;
+}
+
+.profilePic {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+}
+
+.profilePicSt {
+  position: absolute;
+  right: 2em;
+  top: 2em;
+}
+
+.settings {
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+}
+
+.fa-gear {
+  cursor: pointer;
+  font-size: 24px;
+  color: #3d3d3d;
+}
+
+.fa-gear:hover {
+  color: #302f2f;
+}
+
+#profile-photo-chat {
+  height: 2em;
+  width: 2em;
+  border-radius: 0.2em;
+}
+
+#profile-photo-chat-local {
+  height: 2em;
+  width: 2em;
+  border-radius: 0.2em;
+}
+
+.profile-photo-message {
+  height: 2em;
+  width: 2em;
+  border-radius: 0.2em;
+}
+
+.message {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  vertical-align: center;
+  padding-top: 1em;
+}
+
+.inside-text {
+  margin-left: 0.3em;
+}

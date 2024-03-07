@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Profile - Video Chat</title>
+  </head>
+  <body>
+    <section class="question-section" id="question-section-1">
+      <h1>Select your gender</h1>
+      <div class="question-div">
+        <button class="next-button" data-next-section="question-section-2">
+          Male
+        </button>
+        <button class="next-button" data-next-section="question-section-2">
+          Female
+        </button>
+        <button class="next-button" data-next-section="question-section-2">
+          Other
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="question-section-2"
+      style="display: none"
+      id="question-section-2"
+    >
+      <h1>Choose Your Nickname</h1>
+      <div class="question-div" type="username">
+        <input
+          class="username-input"
+          placeholder="Your username..."
+          type="text"
+        />
+        <button class="next-button" data-next-section="question-section-3">
+          Next
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="question-section-3"
+      style="display: none"
+      id="question-section-3"
+    >
+      <h1>Let Us Know Your Age</h1>
+      <div class="question-div" type="age">
+        <input type="date" class="age-date" />
+        <button class="next-button" data-next-section="question-section-4">
+          Next
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="question-section-4"
+      style="display: none"
+      id="question-section-4"
+    >
+      <h1>Share Your Interests</h1>
+      <div class="question-div" type="interest">
+        <input
+          type="text"
+          class="interest-input"
+          placeholder="Your interests..."
+        />
+        <button class="next-button" data-next-section="question-section-5">
+          Next
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="question-section-5"
+      style="display: none"
+      id="question-section-5"
+    >
+      <h1>Set Up Your Profile</h1>
+      <div class="question-div" type="profile">
+        <div class="profile-photo-upload">
+          <label for="profile-photo-input" class="profile-photo-style">
+            <img
+              src="/assets/user.jpg"
+              class="user-photo"
+              alt="Profile Photo"
+              id="profile-photo-preview"
+            />
+            <input type="file" id="profile-photo-input" accept="image/*" />
+            <a href="/pages/chat.html">
+              <button id="finish-button">Finish</button>
+            </a>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <script src="/scripts/next.js"></script>
+  </body>
+</html>
