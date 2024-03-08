@@ -20,7 +20,7 @@ This website serves as a portfolio project to highlight my proficiency in JavaSc
 
 ## Usage
 
-To explore the camera chat demonstration, simply open the [website](#your-website-url).
+To explore the camera chat demonstration, simply open the [website](#[your-website-url](https://ggogua.github.io/camchat/)).
 
 ## Setup
 
