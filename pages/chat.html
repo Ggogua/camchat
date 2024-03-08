@@ -18,9 +18,15 @@
             <video id="localVideo" autoplay muted></video>
           </div>
           <canvas id="canvas"></canvas>
-          <div class="settings">
-            <i class="fa-solid fa-gear"></i>
+          <div class="settings" id="settingsIcon">
+            <i class="fas fa-gear"></i>
+            <div class="settings-popup" id="settingsPopup">
+              <div class="popup-content">
+                <button id="confirmDeleteButton">Delete Account</button>
+              </div>
+            </div>
           </div>
+
           <div class="profilePic">
             <img
               src="/"

@@ -59,3 +59,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const settingsIcon = document.getElementById("settingsIcon");
+  const settingsPopup = document.getElementById("settingsPopup");
+  const confirmDeleteButton = document.getElementById("confirmDeleteButton");
+
+  settingsIcon.addEventListener("click", () => {
+    settingsPopup.style.display =
+      settingsPopup.style.display === "none" ? "block" : "none";
+  });
+
+  confirmDeleteButton.addEventListener("click", () => {
+    alert("Account deleted!");
+    settingsPopup.style.display = "none";
+    window.location.href = "../index.html";
+  });
+});
